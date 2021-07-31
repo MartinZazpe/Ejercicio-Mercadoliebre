@@ -12,7 +12,7 @@ p{
 }
 
 
-.font-size-titulares{
+.text-titles{
     font-size: 24px;
 }
 
@@ -30,9 +30,12 @@ p{
 
 .hamburger-icon{
 text-align:center;
-color: blue;
+background: blue;
+margin-left: 540px;
+margin-right: 540px;
+color: white;
 font-size:2em;
-
+border-radius:10px;
 }
 
 .align-center{
