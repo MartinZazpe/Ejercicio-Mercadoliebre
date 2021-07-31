@@ -1,0 +1,40 @@
+.background-color-yl{
+    background-color: #EAC926;
+}
+
+body{
+    margin:0px;
+    font-family: 'Roboto';
+}
+
+p{
+    font-size: 12px;
+}
+
+
+.font-size-titulares{
+    font-size: 24px;
+}
+
+.font-size-precios{
+    font-size: 18px;
+}
+
+.font-size-descuentos{
+    font-size:16px;
+}
+
+.font-size-descripciones{
+    font-size:16px;
+}
+
+.hamburger-icon{
+text-align:center;
+color: blue;
+font-size:2em;
+
+}
+
+.align-center{
+    text-align:center;
+}
