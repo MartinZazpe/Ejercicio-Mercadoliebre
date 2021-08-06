@@ -1,43 +1,83 @@
-.background-color-yl{
-    background-color: #EAC926;
-}
+* {box-sizing:border-box;}
 
-body{
-    margin:0px;
+
+.background-color-yl {background-color: #EAC926;}
+
+
+.banner {width:100%;}
+
+
+body {
     font-family: 'Roboto';
-}
-
-p{
     font-size: 12px;
+    background-color: #ebebeb;
 }
 
-
-.text-titles{
+.titles {
     font-size: 24px;
+    text-align: center;
 }
 
-.font-size-precios{
-    font-size: 18px;
-}
+
+.font-size-precios{font-size: 18px;}
+
 
 .font-size-descuentos{
     font-size:16px;
+    color:#39b54a;;
 }
+
 
 .font-size-descripciones{
     font-size:16px;
+    color: grey;
 }
 
+
 .hamburger-icon{
-text-align:center;
-background: blue;
-margin-left: 540px;
-margin-right: 540px;
-color: white;
-font-size:2em;
-border-radius:10px;
-}
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    background: blue;
+    font-size:24px;
+    border-radius:5px;
+    padding: 8px;
+    color: white;
+    text-align:center;
+    }
+
 
 .align-center{
     text-align:center;
+    padding: 20px;
 }
+
+
+.articleContainer{
+    margin: 15px;
+}
+
+/* having issue with margin-right of item */
+
+.articleItem{
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+}
+
+
+#main-content{  
+    padding: 0 5%;
+    width:100%;   
+}
+
+
+.deliveryIcon{
+    color:#39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+
+.paddingLogo {padding:24px;}
