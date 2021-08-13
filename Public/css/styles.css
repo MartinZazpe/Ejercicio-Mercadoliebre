@@ -1,117 +1,115 @@
-* {box-sizing:border-box;}
-
-
-.header {background-color: #EAC926;}
-
-
-.paddingLogo {padding:24px;}
-
-
-.banner {width:100%;}
-
-
-body {
-    font-family: 'Roboto';
-    font-size: 12px;
-    background-color: #ebebeb;
+.Logo{
+    width:50%;
 }
 
-.titles {
-    font-size: 24px;
+.logo-searchBar{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.searchBar-button{
+    display:inline-block;
+}
+
+
+.glass-decortation{
+background-color: white;
+border-left:none;
+}
+
+
+#ml-main-nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    display:none;
+}
+
+#ml-main-nav a{
+    text-decoration: none;
+    color: black;
+    display:none;
+}
+
+
+.hamburger-menu{
     text-align: center;
-}
-
-
-.font-size-precios{font-size: 18px;}
-
-
-.font-size-descuentos{
-    font-size:16px;
-    color:#39b54a;;
-}
-
-
-.font-size-descripciones{
-    font-size:16px;
-    color: grey;
-}
-
-
-.hamburger-icon{
-    margin: 0 auto;
-    height: 40px;
-    width: 40px;
-    background: blue;
-    font-size:24px;
-    border-radius:5px;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
     padding: 8px;
-    color: white;
-    text-align:center;
-    }
+    margin: 0 auto;
+    border-radius: 5px;
+}
 
+.banner{
+    width: 100%;
+}
 
-.align-center{
-    text-align:center;
-    padding: 20px;
+#main-content{
+padding: 0 5%;
+}
+
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.product{
+    border: 1px solid #ebebeb;
+    margin-bottom: 15px;
 }
 
 
-.articleContainer{
-    margin: 15px;
-}
-
-/* having issue with margin-right of item */
-
-.articleItem{
-    margin-bottom: 10px;
-    border-top: 1px solid #ebebeb;
-    background-color: white;
-    position:relative;
-}
-
-
-#main-content{  
-    padding: 0 5%; 
-}
-
-
-.deliveryIcon{
-    color:#39b54a;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-
-.cafetera, .macbook, .samsungGalaxy, .samsungTv,
-.cafetera2, .macbook2, .samsungGalaxy2, .samsungTv2 
-{
+.product-img{
     width:100%;
 }
 
-
-/* ocultar el site?? */
-/* versiones mobile */
-@media (max-width: 360px){
-    .articleItem{
-        display: none;
-    }
-    .loginNavBar{
-        display:none;
-    }
+.product-content{ 
+    width:100%;
+    border-top: 1px solid #ebebeb;
+    position:relative;
+    background-color: white;
+    display:none;
 }
 
 
-/* tablet and desktop */
-@media (min-width:361px){
-    .articleItem{
-        box-shadow:0px 0px 10px rgb(100,100,100);
-    }
-    .hamburger-icon{
-        display:none;
-    }
-    .loginNavBar{ 
-        width: 100%;
-    }
-    }
+.truck-icon{
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    right:20px;
+    top:-15px;
+}
 
+
+.form-input .main-label{
+    display:block;
+    font-size:16px;
+    font-weight: bold;
+}
+
+
+.form-input input{
+    width:100%;  
+}
+
+.form-input input[type="checkbox"],
+.form-input input[type="radio"]{
+    width:auto;
+    margin: 0 3px 0 3px;
+}
+
+.form-input{
+    margin-bottom:23px;
+}
+
+.main-label-inline{
+    display:inline-block;
+    text-align: center;
+}
