@@ -1,3 +1,31 @@
+.product-content{
+    display: none;
+}
+
+/*
+.searchbar-container{
+display:initial;
+}*/
+
 .product-wrapper{
-    width:25%;
+    width:50%;
+}
+
+.product{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+
+.product-wrapper:hover .product-content{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.truck-icon{ 
+    transition-property: transform ease-in-out 500ms; /* not currently working */
+}
+
+.product-wrapper:hover .truck-icon{
+transform:rotate(360deg);   /* not currently working */
 }

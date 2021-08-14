@@ -12,7 +12,7 @@
         <link
             rel="stylesheet"
             href="/css/styles-sm.css"
-            media="(min-width:361px)"
+            media="(min-width:480px)"
         />
         <link
             rel="stylesheet"
@@ -28,24 +28,26 @@
 
     <body>
         <header class= "ml-yellow-bg padding">
-            <div class=Logo-searchBar>
+            <div class="flex">
             <img class= "Logo" src="/images/logo-mercado-liebre.svg" alt="logo" />
-            <div class="searchBar-button">
-                <input type="text" placeholder="Buscar productos, marcas" />
+            <div clas="flex searchbar-container">
+            <div class="flex no-wrap w-50 searchbar padding-left10">
+            <input class="no-border no-background" type="text" placeholder="Buscar productos, marcas" />
                 <button class='no-border no-background'><i class="fa fa-search"></i></button>
-            </div>
-        </div>
+            </div> 
+        </div>  
             <p class="text-center"> <i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjetas de crédito
             </p>
+        </div>  
             <nav id="ml-main-nav">
-            <ul>
+            <ul class="left-nav-bar">
                 <li>Ofertas</li>
                 <li>Tiendas Oficiales</li>
                 <li>Vender</li>
                 <li>Ayuda</li>
             </ul>
-            <ul>
+            <ul class="right-nav-bar">
                 <li>
                 <a href="/register">Creá tu cuenta
                 <i class="far fa-id-card"></i></a>
@@ -81,7 +83,7 @@
 <div class="product-wrapper">
     <article class="product">
         <img class='product-img' src="/images/img-macbook-pro-2019.jpg" alt="Macbook pro 2019" />
-        <div class="product-content">
+        <div class="product-content flex">
             <i class="fas fa-truck ml-green-text truck-icon"></i>
             <p class="font-size-precios"> $230.000</p>
             <p class="font-size-descuentos ml-green-text">20% off</p>
