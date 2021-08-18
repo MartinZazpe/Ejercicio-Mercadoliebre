@@ -30,35 +30,39 @@
         />
 </head>
 <body>
-    <header class= "ml-yellow-bg padding">
-        <img class= "center" src="/images/logo-mercado-liebre.svg" alt="logo" />
-        <div class="searchBar">
-            <input type="text" placeholder="Buscar productos, marcas" />
-            <button><i class="fa fa-search"></i></button>
-        </div>
-        <p class="text-center"> <i class="fas fa-hand-holding-usd"></i>
+    <header class= "main-header">
+        <div class="main-header-top-bar">
+            <a href='/'><img class= 'logo' src="/images/logo-mercado-liebre.svg" alt="logo" /></a>
+            <div>
+                <input  class='w-100' type="text" placeholder="Buscar productos, marcas" />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        <h2 class="copy-header"> <i class="fas fa-hand-holding-usd"></i>
             Comprá en cuotas y sin tarjetas de crédito
-        </p>
-        <nav id="ml-main-nav">
-        <ul>
-            <li>Ofertas</li>
-            <li>Tiendas Oficiales</li>
-            <li>Vender</li>
-            <li>Ayuda</li>
+        </h2>
+    </div>
+    <div class="hamburger-menu ml-lb-bg">
+        <i class="fas fa-bars ml-light-text"></i>
+    </div>
+        <nav class="main-navbar">
+        <ul class='left-navbar'>
+            <li><a href='#'>Ofertas</a></li>
+            <li><a href='#'>Tiendas oficiales</a></li>
+            <li><a href='#'>Vender</a></li>
+            <li><a href='#'>Ayuda</a></li>
         </ul>
-        <ul>
-            <li>Creá tu cuenta <i class="far fa-id-card"></i></li>
-            <li>Ingresá <i class="fas fa-sign-in-alt"></i></li>
-            <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
+
+        <ul class='right-navbar'>
+            <li><a href='/register'>Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+            <li><a href='/login'>Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href='#'>Mis compras <i class="fas fa-shopping-basket"></i></a></li>
         </ul>
     </nav>
-        <div class="hamburger-menu ml-lb-bg">
-            <i class="fas fa-bars ml-light-text"></i>
-        </div>
     </header>
    <main>
        <h1 class='text-center'> Registro de usuario </h1>
     <form action='/' method="GET">
+        <fieldset>
         <div class='form-input'>
             <label  class= 'main-label' for="name"></label>
             <input type="text" id="name" name="name" placeholder="Nombre y Apellido">
@@ -73,49 +77,49 @@
         </div>
         <div class='form-input'>
             <label class='main-label' for='repassword'></label>
-            <input id="repassword" type="password" name="repassword" placeholder="Repetir contraseña"/>
+            <input id="repassword" type="repassword" name="repassword" placeholder="Repetir contraseña"/>
         </div>
         <div class='form-input'>
-            <label class= 'main-label' for="birthdate"> <strong>Fecha de nacimiento</strong></label>
-            <input type="date" id="birthdate" name="birthdate">
+            <label class= 'main-label nacimiento-label' for="birthdate"> <strong>Fecha de nacimiento</strong></label>
+            <input class='white-bg' type="date" id="birthdate" name="birthdate">
         </div>
         <div class='form-input'>
             <label  class= 'main-label' for='address'></label>
             <input id='address' type='text' name='address' placeholder="Domicilio"/>
         </div>
 
-        <div class='form-input main-label'>
-            <label  class= 'main-label text-center' id="user-profile-seller"><strong>Perfil de Usuario</strong></label>
-            <div class="align-vertically-balanced text-center">
-            <input type="checkbox" id="user-profile-seller" name= "user-profile" value= "seller">
-            <label class= 'main-label-inline' for="user-profile-seller"> Vendedor</label>
-            <input type="checkbox" id="user-profile-seller"name="user-profile" value= "buyer">
-            <label class= 'main-label-inline' for="user-profile-seller"> Comprador</label>
+        <div class='form-input flex-wrap perfil-form'>
+            <label  class= 'main-label w-100 ' id="user-profile-seller"><strong>Perfil de Usuario</strong></label>
+            <div class="text-center">
+            <input type="radio" id="user-profile-seller" name= "user-profile" value= "seller">
+            <label class= 'main-label-inline padding-5' for="user-profile-seller"> Vendedor</label>
+            <input type="radio" id="user-profile-seller"name="user-profile" value= "buyer">
+            <label class= 'main-label-inline padding-5' for="user-profile-seller"> Comprador</label>
             </div>
         </div>
 
         <div class='form-input main-label'>
-            <label class="main-label text-center">Intereses</label>
-            <div class="align-vertically-evenly text-center">
+            <label class="main-label flex-wrap">Intereses</label>
+            <div class="">
             <div>
                 <input  type="checkbox" name="Electronica" id="Electronica" value="Electronica" />
-                <label for="Electronica">Electronica</label>
+                <label class='padding-5' for="Electronica">Electronica</label>
             </div>
             <div>
             <input  type="checkbox" name="Moda" id="Moda" value="Moda" />
-                <label for="Moda">Moda</label>
+                <label class='padding-5' for="Moda">Moda</label>
             </div>
             <div>
                 <input type="checkbox" name="Hogar" id="Hogar" value="Hogar" />
-                    <label for="Hogar">Hogar</label>
+                    <label class='padding-5' for="Hogar">Hogar</label>
                 </div>
                 <div>
                     <input type="checkbox" name="Juguetería" id="Juguetería" value="Juguetería" />
-                        <label for="Juguetería">Juguetería</label>
+                        <label class='padding-5' for="Juguetería">Juguetería</label>
                     </div>
                     <div>
                         <input type="checkbox" name="Vida sana" id="Vida sana" value="Vida sana" />
-                            <label for="Vida sana">Vida sana</label>
+                            <label class='padding-5' for="Vida sana">Vida sana</label>
                         </div>
                     </div>
         </div>
@@ -123,11 +127,12 @@
             <label class='main-label' for='profile-pic'>Foto de perfil</label>
             <input id='profile-pic' type='file' name='profile-pic' accept='image/png, image/jpeg'/>
         </div>
-        <div class= 'buttons-align-style'>
-        <button class='flexgrow ml-lb-bg ml-white-text' type="submit">Enviar</button>
-        <button class='flexgrow ml-lb-bg ml-white-text' type="reset">Resetear</button>
+        <div class= 'buttons-align-style border-rad-5'>
+        <button class='button-form flexgrow ml-lb-bg ml-white-text padding-5' type="submit">Enviar</button>
+        <button class='button-form flexgrow ml-lb-bg ml-white-text padding-5' type="reset">Resetear</button>
     </div>
-        </div>   
+        </div>
+    </fieldset>   
     </form>
     
     </main>

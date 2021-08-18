@@ -1,27 +1,72 @@
-.Logo{
-    width:50%;
+.logo{
+    width:200px;
+}
+
+.main-header{
+    background-color:#eac926;
+    padding: 20px;
+}
+
+.copy-header{
+font-weight: 400;
+text-align: center;
 }
 
 
-/*
-.searchbar {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    width:50%;
-}*/
-
-#ml-main-nav ul{
-    list-style-type: none;
-    padding-left: 0;
+.main-navbar{
     display:none;
 }
 
-#ml-main-nav a{
+
+.main-navbar ul{
+list-style: none;
+margin:0;
+padding:0;
+}
+
+
+.main-navbar a{
     text-decoration: none;
-    color: black;
-    display:none;
+    color: #222222;
+    display:inline-block;
+    padding: 5px 0;
 }
+
+
+/* register specific */
+fieldset{
+    border:none;
+}
+
+.form-input .main-label{
+    display:block;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.form-input input{
+    width:100%;  
+    padding: 8px 8px;
+    border:none;  
+    border-radius: 5px;  
+}
+
+.form-input input[type="checkbox"],
+.form-input input[type="radio"]{
+    width:auto;
+    margin: 0 3px 0 3px;
+}
+
+.form-input{
+    margin-bottom:23px;
+}
+
+.perfil-form{
+display:flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
 
 
 .hamburger-menu{
@@ -31,7 +76,8 @@
     height: 44px;
     padding: 8px;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    display:block;
 }
 
 .banner{
@@ -41,6 +87,7 @@
 #main-content{
 padding: 0 5%;
 }
+
 
 .flex{
     display:flex;
@@ -52,7 +99,6 @@ padding: 0 5%;
     margin-bottom: 15px;
     background-color: white;
 }
-
 
 .product-img{
     width:100%;
@@ -79,29 +125,6 @@ padding: 0 5%;
     top:-15px;
 }
 
-
-.form-input .main-label{
-    display:block;
-    font-size:16px;
-    font-weight: bold;
-}
-
-
-.form-input input{
-    width:100%;  
-}
-
-.form-input input[type="checkbox"],
-.form-input input[type="radio"]{
-    width:auto;
-    margin: 0 3px 0 3px;
-}
-
-.form-input{
-    margin-bottom:23px;
-}
-
-.main-label-inline{
-    display:inline-block;
-    text-align: center;
+.button-form:hover{
+    background-color: #0022AA;
 }

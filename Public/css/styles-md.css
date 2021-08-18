@@ -1,11 +1,44 @@
-.product-content{
+.main-header-top-bar{
+display:flex;
+justify-content: space-between;
+}
+
+.copy-header{
+    max-width:350px;
+    text-align:right;
+}
+
+.hamburger-menu {
     display: none;
 }
 
-/*
-.searchbar-container{
-display:initial;
-}*/
+
+.main-navbar{
+    display: flex;
+    justify-content:space-around;
+}  
+
+.main-navbar ul{
+    display:flex;
+}
+
+.main-navbar li{
+    margin:5px;
+}
+
+
+
+/* break ^ this is from reviewing */
+
+.product-wrapper{
+    padding:15px;
+ }
+ 
+
+
+.product-content{
+    display: none;
+}
 
 .product-wrapper{
     width:50%;
@@ -14,7 +47,6 @@ display:initial;
 .product{
     box-shadow: 0px 0px 10px rgb(100,100,100);
 }
-
 
 .product-wrapper:hover .product-content{
     display:flex;
@@ -26,6 +58,6 @@ display:initial;
     transition-property: transform ease-in-out 500ms; /* not currently working */
 }
 
-.product-wrapper:hover .truck-icon{
+.product:hover .truck-icon:hover{
 transform:rotate(360deg);   /* not currently working */
 }

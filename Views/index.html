@@ -1,3 +1,8 @@
+<!--- Hola! Cuando corras este codigo en el navegador, podes pinchar en el logo para volver al home-->
+<!--- También, es posible que encuentres código sin usar de CSS que haya quedado por error.-->
+<!--- Gracias por tomarte un momento para revisar esto y darme tu opinión-->
+<!--- Que no funciona de momento: search bar y  algunos efectos de transición-->
+
 <!DOCTYPE html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,38 +32,34 @@
     </head>
 
     <body>
-        <header class= "ml-yellow-bg padding">
-            <div class="flex">
-            <img class= "Logo" src="/images/logo-mercado-liebre.svg" alt="logo" />
-            <div clas="flex searchbar-container">
-            <div class="flex no-wrap w-50 searchbar padding-left10">
-            <input class="no-border no-background" type="text" placeholder="Buscar productos, marcas" />
-                <button class='no-border no-background'><i class="fa fa-search"></i></button>
-            </div> 
-        </div>  
-            <p class="text-center"> <i class="fas fa-hand-holding-usd"></i>
+        <header class= "main-header">
+            <div class="main-header-top-bar">
+                <a href='/'><img class= 'logo' src="/images/logo-mercado-liebre.svg" alt="logo" /></a>
+                <div>
+                <input  class='w-100' type="text" placeholder="Buscar productos, marcas" />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <h2 class="copy-header"> <i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjetas de crédito
-            </p>
-        </div>  
-            <nav id="ml-main-nav">
-            <ul class="left-nav-bar">
-                <li>Ofertas</li>
-                <li>Tiendas Oficiales</li>
-                <li>Vender</li>
-                <li>Ayuda</li>
+            </h2>
+        </div>
+        <div class="hamburger-menu ml-lb-bg">
+            <i class="fas fa-bars ml-light-text"></i>
+        </div>
+            <nav class="main-navbar">
+            <ul class='left-navbar'>
+                <li><a href='#'>Ofertas</a></li>
+                <li><a href='#'>Tiendas oficiales</a></li>
+                <li><a href='#'>Vender</a></li>
+                <li><a href='#'>Ayuda</a></li>
             </ul>
-            <ul class="right-nav-bar">
-                <li>
-                <a href="/register">Creá tu cuenta
-                <i class="far fa-id-card"></i></a>
-            </li>
-                <li> Ingresá<i class="fas fa-sign-in-alt"></i></li>
-                <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
+    
+            <ul class='right-navbar'>
+                <li><a href='/register'>Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+                <li><a href='/login'>Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href='#'>Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
-            <div class="hamburger-menu ml-lb-bg">
-                <i class="fas fa-bars ml-light-text"></i>
-            </div>
         </header>
 
   <img class="banner" src="/images/img-home-banner.jpg" alt= "banner" />   

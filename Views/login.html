@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Mercado Liebre</title>
+    <script src="https://kit.fontawesome.com/d3503ff7e5.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/normalize.css"/>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/theme.css" />
+        <link rel="stylesheet" href="/css/utils.css" />
+        <link
+            rel="stylesheet"
+            href="/css/styles-sm.css"
+            media="(min-width:480px)"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/styles-md.css"
+            media="(min-width:768px)"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/styles-lg.css"
+            media="(min-width:1280px)"
+        />
+</head>
+<body>
+    <header class= "main-header">
+        <div class="main-header-top-bar">
+            <a href='/'><img class= 'logo' src="/images/logo-mercado-liebre.svg" alt="logo" /></a>
+            <div>
+                <input  class='w-100' type="text" placeholder="Buscar productos, marcas" />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        <h2 class="copy-header"> <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjetas de crédito
+        </h2>
+    </div>
+    <div class="hamburger-menu ml-lb-bg">
+        <i class="fas fa-bars ml-light-text"></i>
+    </div>
+        <nav class="main-navbar">
+        <ul class='left-navbar'>
+            <li><a href='#'>Ofertas</a></li>
+            <li><a href='#'>Tiendas oficiales</a></li>
+            <li><a href='#'>Vender</a></li>
+            <li><a href='#'>Ayuda</a></li>
+        </ul>
+
+        <ul class='right-navbar'>
+            <li><a href='/register'>Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+            <li><a href='/login'>Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href='#'>Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+    </header>
+   <main>
+       <h1 class='text-center'> Ingresar sesión </h1>
+    <form action='/' method="GET">
+        <fieldset>
+        <div class='form-input'>
+            <label class= 'main-label' for="username"></label>
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+        </div>
+        <div class='form-input'>
+            <label class='main-label' for='password'></label>
+            <input id="password" type="password" name="password" placeholder="Contraseña"/>
+        </div>
+        <div class= 'buttons-align-style border-rad-5'>
+            <button class=' button-form flexgrow ml-lb-bg ml-white-text padding-5' type="submit">Enviar</button>
+        </div>
+    </fieldset>   
+    </form>
+    
+    </main>
+    
+</body>
+</html>
