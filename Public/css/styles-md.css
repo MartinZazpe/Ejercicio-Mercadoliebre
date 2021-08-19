@@ -3,10 +3,20 @@ display:flex;
 justify-content: space-between;
 }
 
+.logo{
+display:initial;
+}
+
 .copy-header{
     max-width:350px;
     text-align:right;
 }
+
+
+.container-searchbar{
+    margin:initial;
+    }
+
 
 .hamburger-menu {
     display: none;
@@ -55,9 +65,15 @@ justify-content: space-between;
 }
 
 .truck-icon{ 
-    transition: transform ease-in-out 500ms; /* not currently working */
+    transition: transform ease-in-out 500ms; 
 }
 
+
 .product:hover .truck-icon{ 
-transform:rotate(360deg);   /* not currently working */
+transform:rotate(360deg);  
 }
+
+
+
+
+

@@ -1,5 +1,8 @@
 .logo{
     width:200px;
+    display:flex;
+    align-content: center;
+    margin: auto;
 }
 
 .main-header{
@@ -129,3 +132,20 @@ padding: 0 5%;
     background-color: #0022AA;
 }
 
+.container-searchbar{
+padding:8px;
+width:50%;
+margin:auto;
+}
+
+.item-container-searchbar{
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+.container-styling-searchbar{
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width:100%;
+}

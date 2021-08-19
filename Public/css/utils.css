@@ -7,6 +7,13 @@ body {
   margin: 0;
 }
 
+.searchbar {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
 
 .text-center {
   text-align: center;
@@ -50,6 +57,10 @@ body {
   background:none;
 }
 
+.margin-top-8{
+  margin-top: 8px;
+}
+
 
 .no-border{
   border:none;
@@ -90,6 +101,14 @@ justify-content: space-evenly;
     flex-grow:1;
   }
 
+  .flex{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+.no-wrap{
+  flex-wrap:nowrap;
+}
 
 .justify-center{
   justify-content: center;
